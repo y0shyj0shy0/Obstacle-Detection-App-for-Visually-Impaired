@@ -18,8 +18,8 @@
 
 # 기술 스택  
 - Computer Vision: YOLOv8 (객체 인식)  
-- Semantic Segmentation: MobileNetV2 기반 U-Net (횡단보도 인식)  
-- Python, OpenCV, PyTorch  
+- Python, OpenCV, PyTorch
+- MiDaS (객체 깊이 추정)
 - Socket Programming (서버–클라이언트 구조)  
 - TTS(Text-to-Speech) 모듈 (음성 안내)  
 
