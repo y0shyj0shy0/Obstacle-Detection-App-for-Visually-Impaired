@@ -51,9 +51,9 @@
 
 
 # VERSION
--React-native: 0.76
--Metro: 0.81.0
--Android gradle plugin: 8.6.0
--Gradle: 8.10.2
--Python: 3.12.7
--nodejs: 20.11.1
+- React-native: 0.76
+- Metro: 0.81.0
+- Android gradle plugin: 8.6.0
+- Gradle: 8.10.2
+- Python: 3.12.7
+- nodejs: 20.11.1
