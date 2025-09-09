@@ -1,5 +1,4 @@
-# Startup_IdeaContest  
-**SW 창업 아이디어 경진대회**  
+# SW 창업 아이디어 경진대회
 
 ---
 
