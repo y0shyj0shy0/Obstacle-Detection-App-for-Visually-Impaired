@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Screen Capture</title>
+</head>
+<body>
+  <h1>Live Screen Capture</h1>
+  <img id="liveImage" width="500" alt="Live Capture" />
+  
+  <script>
+    const ws = new WebSocket('ws://59.19.113.82:3003');
+
+    ws.onopen = () => {
+      console.log('Connected to WebSocket server');
+    };
+
+    ws.onmessage = (event) => {
+      const imgElement = document.getElementById('liveImage');
+      const imgUri = event.data;  // WebSocket으로 받은 이미지 URI
+      imgElement.src = imgUri;    // 실시간으로 이미지를 갱신
+    };
+    
+    ws.onclose = () => {
+      console.log('Disconnected from WebSocket server');
+    };
+  </script>
+</body>
+</html>

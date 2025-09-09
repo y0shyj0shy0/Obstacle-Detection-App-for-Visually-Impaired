@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Stream</title>
+</head>
+<body>
+  <h1>Live Video Stream</h1>
+  <img id="video" src="/video_feed" alt="Live Stream" style="width: 80%; border: 1px solid black;">
+  <script>
+    const video = document.getElementById('video');
+    setInterval(() => {
+      // 실시간으로 이미지를 새로고침하여 표시
+      video.src = '/video_feed?' + new Date().getTime();
+    }, 100); // 0.1초마다 새로고침 (10 FPS)
+  </script>
+</body>
+</html>
